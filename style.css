@@ -1,0 +1,34 @@
+body{
+	background-color: white;
+}
+
+h1{
+	color:red;
+
+}
+
+p{
+	color: black;
+}
+
+ul,h2{
+	color:blue;
+}
+
+.capitaine{
+	font-style:italic;
+}
+
+#handball{
+	width: 30%;
+	float: left;
+}
+
+#joueurs{
+	width: 50%;
+	float: left;
+}
+#autre{
+	width: 15%;
+	float: left;
+}
