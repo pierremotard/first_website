@@ -32,3 +32,10 @@ ul,h2{
 	width: 15%;
 	float: left;
 }
+
+#logo_handball{
+	width: 150px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
