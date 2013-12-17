@@ -4,7 +4,7 @@ html{
 body{
 	width: 1000px;
 	height: 600px;
-	background: #cccccc;
+	background: #ffffff;
 	overflow: hidden;
 	margin: 0;
 }
@@ -31,7 +31,7 @@ body{
 	margin-top: 2px;
 	padding: 10px 10px 10px 10px;
 	width: 200px;
-	background: #ddd;
+	background: #ffffff;
 }
 
 .fildariane{
@@ -39,7 +39,7 @@ body{
 	position: absolute;
 	top: 130px;
 	left: 220px;
-	background: #ccc;
+	background: #ffffff;
 }
 
 .fildariane li{
