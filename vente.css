@@ -1,20 +1,62 @@
-.pub img{
+html{
+	background: #fff;
+}
+body{
 	width: 1000px;
-	height: 130px;
-	padding: 15px;
-	margin-left: 25px;
-	text-align: center;
+	height: 600px;
+	background: #cccccc;
+	overflow: hidden;
+	margin: 0;
 }
 
+.pub{
+	width: 1000px;
+	height: 130px;
+	overflow: hidden;
+	position: relative;
+	/*left: 20px;*/
+}
+.pub img{
+	width: 900px;
+	height: 100px;
+	text-align: center;
+	margin: 15px 50px 15px 50px;
+}
+.pub a{
+	position: absolute;
+	right: 55px;
+	bottom: 20px;
+}
 .menu{
 	margin-top: 2px;
-	padding: 10px;
+	padding: 10px 10px 10px 10px;
 	width: 200px;
-	text-align: left;
+	background: #ddd;
 }
 
 .fildariane{
-	width: 50%;
-	float: right;
-	
+	width: 500px;
+	position: absolute;
+	top: 130px;
+	left: 220px;
+	background: #ccc;
 }
+
+.fildariane li{
+	display: inline;
+	padding-right: 20px;
+	padding-left: 10px;
+	border-right: solid 1px;
+}
+
+.fildariane li:last-child{
+	border-right: 0px;
+}
+
+.produit{
+	width:500px;
+	position: absolute;
+	top: 180px;
+	left: 270px;
+}
+
