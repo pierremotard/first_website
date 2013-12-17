@@ -1,10 +1,7 @@
-html{
-	background: #fff;
-}
+
 body{
 	width: 1000px;
 	height: 600px;
-	background: #ffffff;
 	overflow: hidden;
 	margin: 0;
 }
@@ -14,24 +11,25 @@ body{
 	height: 130px;
 	overflow: hidden;
 	position: relative;
-	/*left: 20px;*/
+	// left: 20px;
+
+	img{
+		width: 900px;
+		height: 100px;
+		text-align: center;
+		margin: 15px 50px 15px 50px;
+	}
+	a{
+		position: absolute;
+		right: 55px;
+		bottom: 20px;
+	}
 }
-.pub img{
-	width: 900px;
-	height: 100px;
-	text-align: center;
-	margin: 15px 50px 15px 50px;
-}
-.pub a{
-	position: absolute;
-	right: 55px;
-	bottom: 20px;
-}
+
 .menu{
 	margin-top: 2px;
-	padding: 10px 10px 10px 10px;
-	width: 200px;
-	background: #ffffff;
+	padding: 15px 15px 15px 15px;
+	width: 150px;
 }
 
 .fildariane{
@@ -39,7 +37,6 @@ body{
 	position: absolute;
 	top: 130px;
 	left: 220px;
-	background: #ffffff;
 }
 
 .fildariane li{
