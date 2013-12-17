@@ -5,7 +5,7 @@ body{
 	overflow: hidden;
 	margin: 0;
 }
-
+$goutiere:15px;
 .pub{
 	width: 1000px;
 	height: 130px;
@@ -17,7 +17,7 @@ body{
 		width: 900px;
 		height: 100px;
 		text-align: center;
-		margin: 15px 50px 15px 50px;
+		margin: $goutiere 50px $goutiere 50px;
 	}
 	a{
 		position: absolute;
@@ -28,39 +28,39 @@ body{
 
 .menu{
 	margin-top: 2px;
-	padding: 15px 15px 15px 15px;
+	padding: $goutiere $goutiere $goutiere $goutiere;
 	width: 150px;
 }
 
 .fildariane{
-	width: 500px;
+	width: 700px;
 	position: absolute;
-	top: 130px;
+	top: 9*$goutiere;
 	left: 220px;
-}
 
-.fildariane li{
+	li{
 	display: inline;
-	padding-right: 20px;
-	padding-left: 10px;
+	padding-right: $goutiere;
+	padding-left: $goutiere;
 	border-right: solid 1px;
 }
 
-.fildariane li:last-child{
+	li:last-child{
 	border-right: 0px;
+}
 }
 
 .produit{
 	width:700px;
 	position: absolute;
 	top: 180px;
-	left: 270px;
+	left: 220px;
 }
 
 .produit img{
 	float: left;
 	width: 350px;
 	height: 300px;
-	margin: 15px 80px 15px 0px;
+	margin: $goutiere 80px $goutiere 0px;
 }
 
