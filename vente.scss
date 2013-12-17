@@ -1,3 +1,15 @@
+$goutiere: 15px;
+$hauteur-pub: 130px;
+$largeur-pub: 1000px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
 
 body{
 	width: 1000px;
@@ -5,24 +17,22 @@ body{
 	overflow: hidden;
 	margin: 0;
 }
-$goutiere:15px;
 .pub{
-	width: 1000px;
-	height: 130px;
+	width: $largeur-pub;
+	height: $hauteur-pub;
 	overflow: hidden;
 	position: relative;
-	// left: 20px;
 
 	img{
-		width: 900px;
-		height: 100px;
+		width: $largeur-pub  - 2 * $goutiere;
+		height: $hauteur-pub - 2 * $goutiere;
 		text-align: center;
 		margin: $goutiere 50px $goutiere 50px;
 	}
 	a{
 		position: absolute;
-		right: 55px;
-		bottom: 20px;
+		right: $goutiere * 2;
+		bottom: $goutiere * 2;
 	}
 }
 
@@ -30,24 +40,33 @@ $goutiere:15px;
 	margin-top: 2px;
 	padding: $goutiere $goutiere $goutiere $goutiere;
 	width: 150px;
+	background: #ccc;
+	@include border-radius(5px);
 }
+
+$decalage-haut-ariane: $goutiere + $hauteur-pub; 
 
 .fildariane{
 	width: 700px;
 	position: absolute;
-	top: 9*$goutiere;
+	top: $decalage-haut-ariane;
 	left: 220px;
-
+	ul{
+		margin: 0;
+		padding: 0;
+	}
 	li{
-	display: inline;
-	padding-right: $goutiere;
-	padding-left: $goutiere;
-	border-right: solid 1px;
-}
-
-	li:last-child{
-	border-right: 0px;
-}
+		display: inline;
+		padding-right: $goutiere;
+		padding-left: $goutiere;
+		border-right: solid 1px;
+		&:first-child{
+			padding-left: 0;
+		}
+		&:last-child{
+			border-right: 0px;
+		}
+	}
 }
 
 .produit{
@@ -57,9 +76,9 @@ $goutiere:15px;
 	left: 220px;
 
 	img{
-	float: left;
-	width: 350px;
-	height: 300px;
-	margin: $goutiere 80px $goutiere 0px;
-}
+		float: left;
+		width: 350px;
+		height: 300px;
+		margin: $goutiere 80px $goutiere 0px;
+	}
 }
