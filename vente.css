@@ -1,6 +1,8 @@
-.pub{
-	wdith: 1000px;
-	height: 50px;
+.pub img{
+	width: 1000px;
+	height: 130px;
 	padding: 15px;
+	margin-left: 25px;
 	text-align: center;
 }
+
