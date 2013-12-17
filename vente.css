@@ -6,3 +6,15 @@
 	text-align: center;
 }
 
+.menu{
+	margin-top: 2px;
+	padding: 10px;
+	width: 200px;
+	text-align: left;
+}
+
+.fildariane{
+	width: 50%;
+	float: right;
+	
+}
