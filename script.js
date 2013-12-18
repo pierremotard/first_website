@@ -1,5 +1,4 @@
 var  taux_du_dollar = 1.3749;
-
 $(document).ready(function() {
 
 	$('#price').mouseenter(function() {
@@ -20,6 +19,8 @@ $(document).ready(function() {
 		console.log(prix_en_euro);
 		$('#price').html(prix_en_euro.toFixed(2) + ' €')
 
-	});	
+	});
+
+		
 
 });
