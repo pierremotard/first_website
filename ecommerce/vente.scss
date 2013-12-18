@@ -1,5 +1,5 @@
 $goutiere: 15px;
-$hauteur-pub: 130px;
+$hauteur-pub: 90px;
 $largeur-pub: 1000px;
 
 @mixin border-radius($radius) {
@@ -27,6 +27,7 @@ body{
 		height: $hauteur-pub - 2 * $goutiere;
 		text-align: center;
 		margin: $goutiere 50px $goutiere 50px;
+		display: inline-block;
 	}
 	a{
 		position: absolute;
