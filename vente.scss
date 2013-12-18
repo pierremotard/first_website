@@ -14,7 +14,6 @@ $largeur-pub: 1000px;
 body{
 	width: 1000px;
 	height: 600px;
-	overflow: hidden;
 	margin: 0;
 }
 .pub{
@@ -51,6 +50,9 @@ $decalage-haut-ariane: $goutiere + $hauteur-pub;
 	position: absolute;
 	top: $decalage-haut-ariane;
 	left: 220px;
+	background: darken(#ccc, 20);
+	@include border-radius(5px);
+
 	ul{
 		margin: 0;
 		padding: 0;
