@@ -1,5 +1,5 @@
 $goutiere: 15px;
-$hauteur-pub: 90px;
+$hauteur-pub: 180px;
 $largeur-pub: 1000px;
 
 @mixin border-radius($radius) {
@@ -40,7 +40,6 @@ body{
 	margin-top: 2px;
 	padding: $goutiere $goutiere $goutiere $goutiere;
 	width: 150px;
-	background: #ccc;
 	@include border-radius(5px);
 }
 
@@ -51,7 +50,6 @@ $decalage-haut-ariane: $goutiere + $hauteur-pub;
 	position: absolute;
 	top: $decalage-haut-ariane;
 	left: 220px;
-	background: darken(#ccc, 20);
 	@include border-radius(5px);
 
 	ul{
@@ -75,7 +73,7 @@ $decalage-haut-ariane: $goutiere + $hauteur-pub;
 .produit{
 	width:700px;
 	position: absolute;
-	top: 180px;
+	top: 240px;
 	left: 220px;
 
 	img{
