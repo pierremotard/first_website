@@ -2,6 +2,10 @@ $goutiere: 15px;
 $hauteur-pub: 180px;
 $largeur-pub: 1000px;
 
+body{
+	background-image: url("christmas.jpg");
+}
+
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -12,9 +16,10 @@ $largeur-pub: 1000px;
 }
 
 h1{
-	color: #EE5555;
+	color: #AA00FF;
 	margin: 30px 0px 20px 400px;
 	display: inline-block;
+	font-size: 50px;
 }
 
 
@@ -26,7 +31,9 @@ body{
 
 
 .menu{
+	font-size: 20px;
 	margin-top: 200px;
+	margin-left: 50px;
 	padding: $goutiere $goutiere $goutiere $goutiere;
 	width: 150px;
 	@include border-radius(5px);
@@ -64,7 +71,12 @@ body{
 	width:700px;
 	position: absolute;
 	top: 240px;
-	left: 220px;
+	left: 300px;
+
+	h2{
+		color: #000000;
+		text-decoration: underline;
+	}
 
 	img{
 		float: left;
